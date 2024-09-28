@@ -86,3 +86,33 @@
 
 ```
 
+## Global & local variable with scope
+
+```c++
+#include <iostream>
+using namespace std;
+
+int Global_Value = 9999999999; // global variable 
+
+int main() {
+	{
+	    int a = 10; // global variable for its chield;
+	    cout<<a<<endl;
+	    {
+	       cout<<a<<endl; 
+	       {
+	           {
+	               {
+	                   int b = 20;
+	                   cout<<a<<endl;
+	               }
+	               
+	           }
+	       }
+	    }
+	}
+	
+	return 0;
+}
+```
+
