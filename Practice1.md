@@ -115,4 +115,142 @@ int main() {
 	return 0;
 }
 ```
+## largest of 2 number 
+
+```c++
+#include <iostream>
+using namespace std;
+
+// logical operators (and = && , or = ||, not = !)
+
+int main()
+{
+    int a = 10;
+    int b = 20;
+
+    int ans = (a > b) ? a : b;
+
+    if (a > b)
+    {
+        ans = a;
+    }
+    else
+    {
+        ans = b;
+    }
+
+    cout << "the larest number : " << ans << endl;
+
+    return 0;
+}
+```
+## largest of three number
+
+```c++
+#include <iostream>
+using namespace std;
+
+// logical operators (and = && , or = ||, not = !)
+
+int main()
+{
+
+    int num1;
+    int num2;
+    int num3;
+
+    cout << "Enter num1 num2 num3: " << endl;
+    cin >> num1 >> num2 >> num3;
+
+    if ((num1 > num2) && (num1 > num3))
+    {
+        cout << "num1 is grater: " << num1 << endl;
+    }
+    else if ((num2 > num1) && (num2 > num3))
+    {
+        cout << "num2 is gater: " << num2 << endl;
+    }
+    else if ((num3 > num1) && (num3 > num2))
+    {
+        cout << "num3 is grater: " << num3 << endl;
+    }
+    else
+    {
+        cout << "All numbers are equal" << endl;
+    }
+
+    string ans = ((num1 > num2) && (num1 > num3)) ? "num1 is grater" : (num2 > num1) && (num2 > num3) ? "number 2 is grater "
+                                                                   : ((num3 > num1) && (num3 > num2)) ? "num3 is grater"
+                                                                                                      : "All number are equal";
+
+    cout << endl
+         << endl;
+
+    cout << ans << endl;
+
+    return 0;
+}
+
+```
+## String to lowercase and or case practice
+
+```c++
+#include <bits/stdc++.h>
+#include <cstring>
+using namespace std;
+
+// logical operators (and = && , or = ||, not = !)
+
+int main()
+{
+    string day;
+    cout << "Enter the name of day: " << endl;
+    cin >> day;
+
+    transform(day.begin(), day.end(), day.begin(), ::tolower);
+
+    cout << day << endl;
+
+    if (day == "monday" || day == "friday")
+    {
+        cout << "Ring the alram" << endl;
+    }
+    else
+    {
+        cout << "stop the alarm" << endl;
+    }
+}
+
+```
+## Assignment Operator: 
+
+```c++
+#include <bits/stdc++.h>
+#include <cstring>
+using namespace std;
+
+// logical operators (and = && , or = ||, not = !)
+
+int main()
+{
+    int a = 10;
+    a += 1; // 11
+    cout << a << endl;
+
+    a -= 2; // 9
+    cout << a << endl;
+
+    a *= 2; // 18
+    cout << a << endl;
+
+    a /= 2; // 9
+    cout << a << endl;
+
+    a %= 2; // 1
+    cout << a << endl;
+
+    return 0;
+}
+
+```
 
